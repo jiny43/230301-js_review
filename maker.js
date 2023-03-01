@@ -1,37 +1,37 @@
 
-        const root = document.getElementById('root');
+const root = document.getElementById('root');
+const Elemetmaker = {
+        tagName:"",
+        setAttriName:"",
+        setAttriValue:"",
+        parent:"",
 
-        const Elementmaker = {
-            tagName:"",
-            setAttriName:"",
-            setAttriValue:"",
-            parent:"",
-
-            maker: function(agName, setAttriName, setAttriValue, parent){
+        maker: function(agName, setAttriName, setAttriValue, parent){
             const element = document.createElement(this.tagName);
             element.setAttribute(this.setAttriName, this.setAttriValue);
             this.parent.appendChild(element);
-            },
-            loopFunc : function() {
-                for(let i =0; i<100; I++){
-                    this.maker();
-                }
+        },
+
+        loopFunc : function() {
+            for(let i =0; i<100; I++){
+                this.maker();
             }
-        }   
-
-
-        function ulMaker(tagName, setAttriName, setAttriValue, parent){
-            const Element = document.createElement(tagName);
-            Element.setAttribute(setAttriName,setAttriValue);
-            parent.appendChild(Element);
-        } 
-        for(let i =0; i < 100; i++){
-            ulMaker('header','id',`test-${i}`,root);
         }
+    }   
 
-        root.children[65].style.width = "100px";
-        root.children[65].style.height = "100px";
-        root.children[65].style.backgroundColor = "red";
+
+function ulMaker(tagName, setAttriName, setAttriValue, parent){
+    const Element = document.createElement(tagName);
+    Element.setAttribute(setAttriName,setAttriValue);
+    parent.appendChild(Element);
+} 
+    for(let i =0; i < 100; i++){
+        ulMaker('header','id',`test-${i}`,root);
+    }
+
+root.children[65].style.width = "100px";
+root.children[65].style.height = "100px";
+root.children[65].style.backgroundColor = "red";
 
 // --------------여기까지 수업시간---------------
 
