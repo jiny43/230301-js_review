@@ -45,14 +45,14 @@ console.log(itsMe['name']);
 const MyFavourite = {
     movie : ["헤어질 결심","캐롤","이파네마소년"],
     song : ["현실의 현실","part2","exile"],
-    color : ["black","green"]
-}
-
-function Favourite(){
+    color : ["black","green"],
+    Favourite:function(){
     console.log("내 최애 영화는 "+MyFavourite.movie[0]+"입니다.");
     console.log("제 최애 노래는 "+MyFavourite.song[0]+"이다.");
+    }
+
 }
-Favourite();
+MyFavourite.Favourite();
 
 
 
