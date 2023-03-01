@@ -1,8 +1,8 @@
 
-    let menu = document.getElementById('menu');
+let menu = document.getElementById('menu');
 
-    for(i=0; i<menu.children.length; i++){ 
-      //배열이기 때문에 children넣어주삼
+for(i=0; i<menu.children.length; i++){ 
+//배열이기 때문에 children넣어주삼
 
 
   if(i===2) //비교연산자 , "판단 주체"가 엄청 중요함!! 
