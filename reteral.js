@@ -27,7 +27,7 @@
 
         itsMe.myName();
 
-//------------복습하기--------------------
+//------------복습하기---------------------
 
 console.log(itsMe.name);
 console.log(itsMe['name']);
